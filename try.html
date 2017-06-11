@@ -1,0 +1,31 @@
+<html>
+<body>
+	<form action="" method="POST"> 
+		SNname : <input type="text" id="textname"><br>
+		Class<input type="text" id="textclass"><br>
+		Marks=<br>
+		Hindi: <input type="text" id="texthindi"><br>
+		English: <input type="text" id="texteng"><br>
+		Maths: <input type="text" id="textmath"><br>
+		Social Science: <input type="text" id="textss"><br>
+		<input type="button" onclick="addStudent()" value="Add">
+	</form>
+	<script>
+	var studentarr = [];
+
+	function addStudent()
+	{
+		var tempobj = { };
+
+		tempobj.sname = document.getElementById('textname').value ;
+		tempobj.sclass = document.getElementById('textclass').value ;
+		tempobj.hindi = document.getElementById('texthindi').value ;
+		tempobj.eng = document.getElementById('texteng').value ;		
+		tempobj.math = document.getElementById('texthmath').value ;
+		tempobj.ss = document.getElementById('textss').value ;
+
+		studentarr.push(tempobj);
+	}
+	</script>
+</body>
+<html>
